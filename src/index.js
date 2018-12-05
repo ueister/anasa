@@ -18,16 +18,14 @@ class Dogs extends React.Component {
 class Asana extends React.Component {
   render() {
   	let gallery = data.dogs.map(function(images){
-      return (<div>{images.image}</div>);
+  		var test = require('.'+images.image);
+      return (<img src={test} alt="" />);
     });
 
     return (
     	<div>
 			<Header />
 			<Dogs gallery={gallery} />
-/*
-			<div>{gallery}</div>
-*/
 			<Footer />
 		</div>
 	);
