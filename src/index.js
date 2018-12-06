@@ -1,8 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap-theme.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { Header } from './Header';
 import { Footer } from './Footer';
+import { Gallery } from './Gallery';
 import dogs from './dogs.json';
 
 const data = dogs;
@@ -18,14 +21,14 @@ class Dogs extends React.Component {
 class Asana extends React.Component {
   render() {
   	let gallery = data.dogs.map(function(images){
-  		var test = require('.'+images.image);
-      return (<img src={test} alt="" />);
+  		var path = require('.'+images.image);
+      return (<img src={path} alt="{images.source}" />);
     });
 
     return (
     	<div>
 			<Header />
-			<Dogs gallery={gallery} />
+			<Gallery />
 			<Footer />
 		</div>
 	);
