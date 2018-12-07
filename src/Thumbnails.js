@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Col, Modal, Image } from 'react-bootstrap';
 
+/*
+Thumbnails file for the gallery that also has the modal from react bootstrap.
+*/
+
 class Thumbnails extends Component {
   constructor(props, context) {
     super(props, context);

@@ -7,6 +7,10 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { Gallery } from './Gallery';
 
+/*
+Main file to call the header, gallery, and footer components.
+*/
+
 class Asana extends Component {
   render() {
     return (
