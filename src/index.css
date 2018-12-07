@@ -32,6 +32,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   max-width: 460px;
+  border:none;
 }
 
 /* Global Footer */
